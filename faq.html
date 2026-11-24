@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/resources/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Best Client — FAQ</title>
+    <style>
+        :root {
+            --bg-dark: #121216;
+            --bg-card: #1c1c24;
+            --accent: #913de2;
+            --accent-hover: #7a2bc7;
+            --text-main: #eaeaea;
+            --text-muted: #a0a0b0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            background-color: var(--bg-card);
+            border-bottom: 1px solid #2a2a35;
+        }
+
+        .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        nav button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        nav button:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background-color: var(--bg-card);
+            border-radius: 12px;
+            border: 1px solid #2a2a35;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+
+        .faq-item {
+            background-color: var(--bg-dark);
+            border: 1px solid #2a2a35;
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .faq-item h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        .faq-item p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        code {
+            background-color: #2a2a35;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            color: var(--text-main);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid #2a2a35;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="icon-link">
+            <img src="assets/resources/icon.png" alt="Best Client Icon" class="icon">
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="faq.html" class="active">FAQ</a>
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+        <a href="login.html"><button>Login</button></a>
+    </nav>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <h3>How do I install Best Client?</h3>
+            <p>Download the Fabric Loader for your version, place the Best Client <code>.jar</code> file inside your <code>.minecraft/mods</code> folder, and launch the game using the Fabric profile.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Which versions are supported?</h3>
+            <p>We actively support the latest release version. If you need builds for older versions, check out our <a href="archive.html" style="color: var(--accent);">Archive</a> page.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What keybind opens the ClickGUI?</h3>
+            <p>By default, press <code>Right Shift</code> in-game to open the main menu. You can rebind this at any time in the controls settings.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Where can I report bugs or suggest features?</h3>
+            <p>Join our official Discord server or open an issue on our GitHub repository to reach the dev team directly.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2026 Best Client Development</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
